@@ -1,4 +1,4 @@
-Web VPython 3.2
+from vpython import *
 g1 = graph(xtitle="t",ytitle="x",width=500, height=250)
 f1 = gcurve(color=color.green, label="x1")
 f2 = gcurve(color=color.purple, label="x2")
