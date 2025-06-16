@@ -29,7 +29,7 @@ A1 = 0.03
 A2 = 0.03
 
 
-while t<5:
+while t<50:
   rate(100)
 
   F1 = -k*x1-b*(x1-x2)
@@ -54,6 +54,6 @@ while t<5:
   y2 = A2*cos(w2*t)
   x1a = .5*(y1+y2)
   x2a = .5*(y1-y2)
-
+if(t<5):
   f1.plot(t,x1a)
   f2.plot(t,x2a-0.15)
