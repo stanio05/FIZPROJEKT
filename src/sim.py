@@ -2,8 +2,6 @@ from vpython import *
 g1 = graph(xtitle="t",ytitle="x",width=500, height=250)
 f1 = gcurve(color=color.green, label="x1")
 f2 = gcurve(color=color.purple, label="x2")
-f3 = gcurve(color=color.green)
-f4 = gcurve(color=color.purple)
 k = 10
 m = 0.15
 b = 5
