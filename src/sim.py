@@ -1,7 +1,9 @@
-from vpython import *
+Web VPython 3.2
 g1 = graph(xtitle="t",ytitle="x",width=500, height=250)
-f1 = gcurve(color=color.blue, label="x1")
-f2 = gcurve(color=color.red, label="x2")
+f1 = gcurve(color=color.green, label="x1")
+f2 = gcurve(color=color.purple, label="x2")
+f3 = gcurve(color=color.green)
+f4 = gcurve(color=color.purple)
 k = 10
 m = 0.15
 b = 5
@@ -48,5 +50,10 @@ while t<5:
   spring3.axis = car2.pos - right.pos
 
   t = t + dt
-  f1.plot(t,x1+.05)
-  f2.plot(t,x2+0.2)
+  y1 = A1*cos(w1*t)
+  y2 = A2*cos(w2*t)
+  x1a = .5*(y1+y2)
+  x2a = .5*(y1-y2)
+
+  f1.plot(t,x1a)
+  f2.plot(t,x2a-0.15)
